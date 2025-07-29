@@ -56,7 +56,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center">
           <p className="opacity-60">
-            © 2024 Le Botelier. Digitalizamos restaurantes con tecnología que funciona.
+            © 2025 Le Botelier. Digitalizamos restaurantes con tecnología que funciona.
           </p>
         </div>
       </div>

@@ -48,20 +48,18 @@ const UrgencySection = () => {
 
         <div className="text-center bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20 mb-8">
           <h3 className="text-2xl md:text-3xl font-bold mb-6">
-            🔥 Solo para los primeros 50 restaurantes
+            🔥 Solo para los primeros 20 restaurantes
           </h3>
           <div className="flex justify-center items-center space-x-8 mb-6">
             <div className="text-center">
-              <div className="text-4xl font-bold text-yellow-300">47</div>
-              <div className="text-sm opacity-75">Plazas ocupadas</div>
+              <div className="text-4xl font-bold text-yellow-300">17</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-green-300">3</div>
-              <div className="text-sm opacity-75">Plazas disponibles</div>
             </div>
           </div>
           <p className="text-lg opacity-90 mb-6">
-            Después de estas 3 plazas, el precio sube a 149€
+            Después de estas 20 plazas, el precio sube a 149€
           </p>
         </div>
 
