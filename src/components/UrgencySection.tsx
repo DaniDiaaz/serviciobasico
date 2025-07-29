@@ -50,14 +50,6 @@ const UrgencySection = () => {
           <h3 className="text-2xl md:text-3xl font-bold mb-6">
             🔥 Solo para los primeros 20 restaurantes
           </h3>
-          <div className="flex justify-center items-center space-x-8 mb-6">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-yellow-300">17</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-green-300">3</div>
-            </div>
-          </div>
           <p className="text-lg opacity-90 mb-6">
             Después de estas 20 plazas, el precio sube a 149€
           </p>
