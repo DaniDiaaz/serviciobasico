@@ -89,7 +89,7 @@ const PricingSection = () => {
         <div className="mt-12 text-center">
           <div className="inline-flex items-center space-x-4 bg-accent/10 px-6 py-3 rounded-full border border-accent/20">
             <span className="text-accent font-semibold">🔥 OFERTA LIMITADA:</span>
-            <span className="text-foreground">Solo para los primeros 50 restaurantes</span>
+            <span className="text-foreground">Solo para los primeros 20 restaurantes</span>
           </div>
         </div>
       </div>
