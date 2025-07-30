@@ -8,7 +8,7 @@ const PricingSection = () => {
   const features = [
     "Chatbot de menú interactivo completo",
     "Configuración personalizada de horarios",
-    "Integración con WhatsApp Business o web",
+    "Integración con web (integración con WhatsApp Business disponible en niveles superiores)",
     "Personalización con tu logo y colores",
     "Instalación profesional en menos de 24h",
     "Soporte técnico incluido por 3 meses"

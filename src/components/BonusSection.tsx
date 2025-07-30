@@ -26,8 +26,8 @@ const BonusSection = () => {
     {
       image: ebookWhatsapp,
       title: "Clientes llenos, mesas vacías",
-      subtitle: "Cómo vender más usando WhatsApp",
-      description: "Estrategias probadas para convertir WhatsApp en tu mejor vendedor y llenar tu restaurante.",
+      subtitle: "Cómo vender más usando Web",
+      description: "Estrategias probadas para convertir tu web en tu mejor vendedor y llenar tu restaurante.",
       value: "29€"
     }
   ];

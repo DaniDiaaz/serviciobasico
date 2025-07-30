@@ -16,7 +16,7 @@ const HeroSection = () => {
               en menos de 24h
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-              Automatiza las consultas de tu carta por WhatsApp y multiplica tus reservas.
+              Automatiza las consultas de tu carta por Web y multiplica tus reservas.
               <strong className="block mt-2">Solo 49€ • Pago único • Sin mensualidades</strong>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -51,7 +51,7 @@ const HeroSection = () => {
             <div className="relative">
               <img 
                 src={whatsappMockup} 
-                alt="Menú digital por WhatsApp" 
+                alt="Menú digital por Web" 
                 className="max-w-md w-full rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold animate-bounce">
