@@ -60,11 +60,11 @@ const PricingSection = () => {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-0.5">
+              <div key={index} className="flex items-center space-x-3 min-h-[40px]">
+                <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                   <Check className="w-4 h-4 text-primary-foreground" />
                 </div>
-                <span className="text-foreground">{feature}</span>
+                <span className="text-foreground leading-tight">{feature}</span>
               </div>
             ))}
           </div>
