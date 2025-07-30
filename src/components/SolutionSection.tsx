@@ -9,7 +9,7 @@ const SolutionSection = () => {
     {
       number: "1",
       icon: <MessageCircle className="w-8 h-8 text-primary" />,
-      title: "El cliente ve el botón de Web",
+      title: "El cliente ve el botón del asistente en tu página web",
       description: "En tu web, redes sociales o tarjeta de visita aparece el botón para contactar contigo"
     },
     {
