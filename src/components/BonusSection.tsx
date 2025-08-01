@@ -95,12 +95,12 @@ const BonusSection = () => {
           </p>
           <Button 
             size="lg" 
-            className="bg-accent hover:bg-accent/90 text-lg px-8 py-4"
+            className="bg-accent hover:bg-accent/90 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto max-w-full"
             asChild
           >
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              Quiero todos los bonus incluidos
-              <ArrowRight className="ml-2" />
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+              <span className="truncate">Quiero todos los bonus incluidos</span>
+              <ArrowRight className="ml-2 flex-shrink-0" />
             </a>
           </Button>
         </div>

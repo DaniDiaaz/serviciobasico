@@ -72,15 +72,15 @@ const PricingSection = () => {
           <div className="text-center">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-lg px-8 py-4 shadow-glow animate-pulse-glow"
+              className="bg-primary hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 shadow-glow animate-pulse-glow w-full sm:w-auto max-w-full"
               asChild
             >
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                Sí, quiero mi menú digital ahora
-                <ArrowRight className="ml-2" />
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                <span className="truncate">Sí, quiero mi menú digital ahora</span>
+                <ArrowRight className="ml-2 flex-shrink-0" />
               </a>
             </Button>
-            <p className="text-sm text-muted-foreground mt-4">
+            <p className="text-xs sm:text-sm text-muted-foreground mt-4">
               ⚡ Instalación en menos de 24 horas garantizada
             </p>
           </div>

@@ -6,9 +6,9 @@ const HeroSection = () => {
   const whatsappUrl = "https://api.whatsapp.com/send?phone=34674565394&text=Me%20interesa%20saber%20m%C3%A1s%20sobre%20esto...";
 
   return (
-    <section className="min-h-screen bg-hero-gradient flex items-center justify-center px-4 py-12 sm:py-20">
-      <div className="container max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <section className="min-h-screen bg-hero-gradient flex items-center justify-center px-4 py-12 sm:py-20 overflow-x-hidden">
+      <div className="container max-w-6xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <div className="text-center lg:text-left order-2 lg:order-1">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
               Tu restaurante con{" "}
@@ -19,36 +19,36 @@ const HeroSection = () => {
               Automatiza las consultas de tu carta por Web y multiplica tus reservas.
               <strong className="block mt-2 text-base sm:text-lg md:text-xl">Solo 49€ • Pago único • Sin mensualidades</strong>
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col gap-4 justify-center lg:justify-start w-full">
               <Button 
                 size="lg" 
-                className="bg-white text-primary hover:bg-yellow-50 text-lg px-8 py-4 shadow-glow animate-pulse-glow"
+                className="bg-white text-primary hover:bg-yellow-50 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 shadow-glow animate-pulse-glow w-full sm:w-auto max-w-full"
                 asChild
               >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <Smartphone className="mr-2" />
-                  Quiero mi menú digital ya
-                  <ArrowRight className="ml-2" />
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                  <Smartphone className="mr-2 flex-shrink-0" />
+                  <span className="truncate">Quiero mi menú digital ya</span>
+                  <ArrowRight className="ml-2 flex-shrink-0" />
                 </a>
               </Button>
             </div>
-            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:items-center justify-center lg:justify-start sm:space-x-4 lg:space-x-6 text-white/80 text-sm sm:text-base space-y-2 sm:space-y-0">
+            <div className="mt-6 sm:mt-8 flex flex-col space-y-3 sm:space-y-2 text-white/80 text-sm sm:text-base">
               <div className="flex items-center justify-center lg:justify-start">
-                <span className="text-green-300 mr-2">✓</span>
-                Instalación en 24h
+                <span className="text-green-300 mr-2 flex-shrink-0">✓</span>
+                <span>Instalación en 24h</span>
               </div>
               <div className="flex items-center justify-center lg:justify-start">
-                <span className="text-green-300 mr-2">✓</span>
-                Sin conocimientos técnicos
+                <span className="text-green-300 mr-2 flex-shrink-0">✓</span>
+                <span>Sin conocimientos técnicos</span>
               </div>
               <div className="flex items-center justify-center lg:justify-start">
-                <span className="text-green-300 mr-2">✓</span>
-                Garantía total
+                <span className="text-green-300 mr-2 flex-shrink-0">✓</span>
+                <span>Garantía total</span>
               </div>
             </div>
           </div>
-          <div className="flex justify-center order-1 lg:order-2">
-            <div className="relative">
+          <div className="flex justify-center order-1 lg:order-2 w-full">
+            <div className="relative max-w-full overflow-hidden">
               <img 
                 src={whatsappMockup} 
                 alt="Menú digital por Web" 
