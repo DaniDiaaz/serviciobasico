@@ -35,62 +35,62 @@ const BonusSection = () => {
   const totalValue = bonuses.reduce((sum, bonus) => sum + parseInt(bonus.value), 0);
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-6">
-            <Gift className="w-12 h-12 text-accent mr-4" />
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground">
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center mb-4 sm:mb-6">
+            <Gift className="w-10 sm:w-12 h-10 sm:h-12 text-accent mb-2 sm:mb-0 sm:mr-4" />
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground">
               Bonus <span className="text-accent">GRATIS</span> incluidos
             </h2>
           </div>
-          <p className="text-xl text-muted-foreground mb-4">
+          <p className="text-lg sm:text-xl text-muted-foreground mb-4 leading-relaxed">
             Cuando pides tu menú digital hoy, también te llevas estos recursos premium
           </p>
-          <div className="inline-flex items-center bg-accent/10 px-6 py-3 rounded-full border border-accent/20">
-            <span className="text-2xl font-bold text-accent">+{totalValue}€</span>
-            <span className="text-foreground ml-2">de valor agregado</span>
+          <div className="inline-flex flex-col sm:flex-row items-center bg-accent/10 px-4 sm:px-6 py-3 rounded-full border border-accent/20">
+            <span className="text-xl sm:text-2xl font-bold text-accent">+{totalValue}€</span>
+            <span className="text-foreground sm:ml-2 text-sm sm:text-base">de valor agregado</span>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {bonuses.map((bonus, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-card transition-all duration-300 group">
               <div className="relative">
                 <img 
                   src={bonus.image} 
                   alt={bonus.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-2 sm:top-4 right-2 sm:right-4 bg-accent text-accent-foreground px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                   Valor: {bonus.value}
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2">
                   {bonus.title}
                 </h3>
-                <p className="text-accent font-semibold mb-3">
+                <p className="text-accent font-semibold mb-3 text-sm sm:text-base">
                   {bonus.subtitle}
                 </p>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 text-sm sm:text-base leading-relaxed">
                   {bonus.description}
                 </p>
                 <div className="flex items-center text-primary">
                   <Download className="w-4 h-4 mr-2" />
-                  <span className="text-sm font-semibold">Descarga inmediata</span>
+                  <span className="text-xs sm:text-sm font-semibold">Descarga inmediata</span>
                 </div>
               </div>
             </Card>
           ))}
         </div>
 
-        <div className="text-center bg-accent/5 rounded-2xl p-8 border border-accent/20">
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+        <div className="text-center bg-accent/5 rounded-2xl p-6 sm:p-8 border border-accent/20">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4">
             Menú Digital (49€) + Bonus ({totalValue}€) = 
             <span className="text-accent block mt-2">¡TODO GRATIS con tu pedido!</span>
           </h3>
-          <p className="text-xl text-muted-foreground mb-6">
+          <p className="text-lg sm:text-xl text-muted-foreground mb-6">
             Solo pagas el menú digital, los bonus van de regalo
           </p>
           <Button 

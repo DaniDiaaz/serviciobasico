@@ -2,16 +2,16 @@ import { Mail, Phone, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-12">
+    <footer className="bg-foreground text-background py-8 sm:py-12">
       <div className="container max-w-4xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold mb-4">¿Tienes dudas? Contáctanos</h3>
-          <p className="text-lg opacity-80">
+        <div className="text-center mb-6 sm:mb-8">
+          <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">¿Tienes dudas? Contáctanos</h3>
+          <p className="text-base sm:text-lg opacity-80">
             Estamos aquí para ayudarte a digitalizar tu restaurante
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 text-center">
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
               <Mail className="w-6 h-6 text-primary-foreground" />
